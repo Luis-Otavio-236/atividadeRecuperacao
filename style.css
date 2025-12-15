@@ -1,16 +1,15 @@
 /*
- * Cores Vibrantes (Paleta Sugerida):
- * Amarelo Vibrante: #FFD700
- * Azul Claro/Ciano: #00FFFF
- * Roxo Elétrico: #8A2BE2
+ * coloquei uma paleta de cores mais vibrante:
+ * Amarelo: #FFD700
+ * Ciano: #00FFFF
+ * Roxo: #8A2BE2
  * Verde Limão: #7FFF00
  * Fundo: #F5F5F5 (Quase branco)
  */
 
-/* Configurações Globais e Fontes */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F5F5F5; /* Fundo Suave */
+    background-color: #F5F5F5;
     color: #333;
     margin: 0;
     padding: 0;
@@ -24,26 +23,24 @@ body {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    border-left: 10px solid #00FFFF; /* Destaque lateral */
+    border-left: 10px solid #00FFFF;
 }
 
-/* Títulos */
 h1 {
     font-size: 2.5em;
-    color: #8A2BE2; /* Roxo Elétrico */
+    color: #8A2BE2;
     text-align: center;
     margin-bottom: 5px;
 }
 
 h2 {
     font-size: 1.8em;
-    color: #00FFFF; /* Azul Claro/Ciano */
+    color: #00FFFF;
     border-bottom: 3px solid #FFD700;
     padding-bottom: 10px;
     margin-top: 0;
 }
 
-/* Header/Footer */
 header {
     background-color: #333;
     color: #FFD700;
@@ -64,15 +61,13 @@ footer {
     margin-top: 40px;
 }
 
-/* SEÇÃO 2: Sobre o Aluno */
 .aluno-bio {
-    border: 2px dashed #7FFF00; /* Verde Limão para um toque divertido */
+    border: 2px dashed #7FFF00;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f0fff0; /* Fundo mais claro */
+    background-color: #f0fff0;
 }
 
-/* SEÇÃO 3: Galeria e Cards */
 .controles {
     display: flex;
     justify-content: flex-end;
@@ -110,9 +105,7 @@ footer {
 
 .card-imagem {
     width: 100%;
-    /* ALTERAÇÃO FEITA AQUI: Usando aspect-ratio para garantir que a altura seja igual à largura (quadrado perfeito) */
     aspect-ratio: 1 / 1; 
-    /* A linha original "height: 180px;" foi substituída ou removida. */
     
     display: flex;
     justify-content: center;
@@ -121,15 +114,6 @@ footer {
     color: #fff;
     font-weight: 800;
 }
-
-/* Se você estiver usando a tag <img> dentro de .card-imagem, certifique-se de que o CSS da imagem seja: */
-/*
-.card-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-*/
 
 .card-conteudo {
     padding: 15px;
@@ -160,20 +144,21 @@ footer {
 
 @media (max-width: 768px) {
     .galeria-cards {
-        grid-template-columns: 1fr; /* Força os cards a ficarem em uma coluna */
+        grid-template-columns: 1fr;
     }
 
     .container {
-        margin: 20px 10px; /* Reduz a margem lateral */
+        margin: 20px 10px;
         padding: 15px;
-        border-left: none; /* Remove a barra lateral grande para economizar espaço */
+        border-left: none;
     }
 
     h1 {
-        font-size: 2em; /* Reduz o tamanho do título principal */
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 1.5em; /* Reduz o tamanho dos subtítulos */
+        font-size: 1.5em;
     }
+
 }
