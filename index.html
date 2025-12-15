@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio de Desenvolvimento Web | Cores Vibrantes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Meu Portfólio de Desenvolvimento Web</h1>
+        <p>Uma jornada colorida através do código e da criatividade.</p>
+    </header>
+
+    <main>
+        <section id="estudos" class="container">
+            <h2>1. O Tripé do Desenvolvimento Web: HTML, CSS e JavaScript</h2>
+            <p>O desenvolvimento web moderno é sustentado por três pilares essenciais. Eles estão listados a seguir:</p>
+            <p>HTML (HyperText Markup Language) é o esqueleto, definindo a estrutura e o conteúdo de cada página. É onde todos os elementos (textos, imagens, links) são organizados.</p>
+            <p>CSS (Cascading Style Sheets) é a pele do design, responsável por toda a parte visual: cores, fontes, layouts e animações. Ele transforma uma página simples em uma experiência visual envolvente. Por fim, **JavaScript** é o cérebro, adicionando interatividade e dinamismo, permitindo que o site responda às ações do usuário e execute lógicas complexas.</p>
+            <p>O JavaScript, que funciona como o sistema nervoso do desenvolvimento web. Essa linguagem de programação adiciona interatividade, dinamismo e inteligência às páginas, permitindo que o site responda às ações do usuário em tempo real. Com JavaScript, é possível criar funcionalidades complexas, como formulários que validam dados automaticamente, animações suaves, jogos, aplicações web completas, sistemas de busca, carrinhos de compras e integrações com APIs externas. Ele transforma um site estático em uma plataforma viva, capaz de oferecer experiências personalizadas e engajadoras, facilitando a navegação e aumentando o envolvimento do usuário.</p>
+        </section>
+
+        <section id="sobre" class="container">
+            <h2>2. Sobre Mim</h2>
+            <div class="aluno-bio">
+                <p><strong>Sou um aluno do 2º Ano de Informática, no IFTM. Gosto de programar em C++, CSS e um pouco de Bash. Porém, tenho dificuldades quanto a HTML e JavaScript. Mesmo assim, ao longo deste ano, participei de várias atividades e projetos, como os projetos da MicroTech, uma empresa falsa que usamos nos projetos ao longo do ano, a qual eu fui um dos principais criadores do projeto, juntamente com meu colega Gabriel José. Na maioria dos projetos, eu era quem ficava encarregado do CSS, ou da wireframe dos nossos sites, pois esse sempre foi meu ponto forte: A criação de designs.</strong></p>
+            </div>
+        </section>
+
+        <section id="projetos" class="container">
+            <h2>3. Galeria de Projetos</h2>
+
+            <div class="controles">
+                <label for="filtro">Ordenar por:</label>
+                <select id="filtro" onchange="ordenarCards()">
+                    <option value="dataCrescente">Data (Antigo &rarr; Novo)</option>
+                    <option value="alfabetica">Título (A &rarr; Z)</option>
+                </select>
+            </div>
+
+            <div class="galeria-cards">
+                <div class="card" data-titulo="Microtech" data-data="2024-05-10">
+                    <div class="card-imagem" style="background-color: #f7a94d;">
+                       <img src="C:\Users\Lorenzo\Documents\Site\Imagens\Microtech.png"
+                       style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Microtech</h3>
+                        <p>Empresa simulada de criação de sites. Foco na estruturação de negócios e primeiros passos com HTML/CSS para uma landing page corporativa. Este projeto estabeleceu a base para todos os projetos futuros.</p>
+                        <span class="data">Data de Criação: 10/05/2024</span>
+                    </div>
+                </div>
+
+                <div class="card" data-titulo="Projeto Figma" data-data="2024-03-20">
+                    <div class="card-imagem" style="background-color: #4dc4f7;">
+                        <img src="C:\Users\Lorenzo\Documents\Site\Imagens\Figma.png"
+                       style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Projeto Figma</h3>
+                        <p>Primeiro projeto do ano. Um site descritivo focado em apresentar as funcionalidades e o potencial de uma ferramenta de design, utilizando layouts básicos e aprimoramento de habilidades de estilização.</p>
+                        <span class="data">Data de Criação: 20/03/2024</span>
+                    </div>
+                </div>
+
+                <div class="card" data-titulo="Vellosci (Site de Carros)" data-data="2024-08-15">
+                    <div class="card-imagem" style="background-color: #a94df7;">
+                  <img src="C:\Users\Lorenzo\Documents\Site\Imagens\Vellosci.jpg"
+                       style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Vellosci (Site de Carros)</h3>
+                        <p>Site de uma empresa de carros, desenvolvido pela Microtech. Foco em design responsivo, uso de grids/flexbox e implementação de carrosséis e formulários interativos com JavaScript básico.</p>
+                        <span class="data">Data de Criação: 15/08/2024</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luís Otávio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
