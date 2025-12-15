@@ -82,9 +82,8 @@ footer {
 
 #filtro {
     padding: 8px 12px;
-    border: 2px solid #00FFFF;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #FFE100;
     cursor: pointer;
     font-weight: 600;
 }
@@ -157,4 +156,24 @@ footer {
     border-radius: 5px;
     width: fit-content;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .galeria-cards {
+        grid-template-columns: 1fr; /* Força os cards a ficarem em uma coluna */
+    }
+
+    .container {
+        margin: 20px 10px; /* Reduz a margem lateral */
+        padding: 15px;
+        border-left: none; /* Remove a barra lateral grande para economizar espaço */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduz o tamanho dos subtítulos */
+    }
 }
